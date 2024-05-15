@@ -1,7 +1,7 @@
 const timer = document.getElementById('timer')
 
 function mypromise(){
-    return new promise((resolve, reject)=>{
+    return new Promise((resolve, reject)=>{
         setTimeout(()=>{
             timer.innerText = "Hello world"
         }, 1000)
