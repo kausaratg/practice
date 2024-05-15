@@ -11,12 +11,9 @@ function mypromise(){
 }
 
 promise = mypromise()
+
 async function myfunc(){
-    try{
-        const data = await promise
-        console.log("Done")
-    }catch(error){
-        console.log("Opps some error", error)
-    }
+    await promise
+    console.log("Done")
 }
 myfunc()
